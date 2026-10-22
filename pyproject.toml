@@ -1,0 +1,25 @@
+[project]
+name = "emma-wrapper"
+version = "0.1.14"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "freeze-dried-data",
+    "numpy>=1.22,<2",
+]
+
+[project.optional-dependencies]
+hdf5source = [
+    "h5py>=3.16.0",
+    "hdf5plugin>=6.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "pillow>=12.2.0",
+]
+
+[tool.uv.sources]
+freeze-dried-data = { git = "https://github.com/tstandley/freeze_dried_data.git", rev = "430a9897a7d8f63d500224c0f2703d53c5261580" }
