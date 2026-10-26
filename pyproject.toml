@@ -1,7 +1,7 @@
 [project]
 name = "emma-wrapper"
 version = "0.1.14"
-description = "Add your description here"
+description = "Python library for accessing, searching, and augmenting the EMMa dataset."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
